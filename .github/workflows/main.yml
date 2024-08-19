@@ -43,7 +43,7 @@ jobs:
         git config --global user.name "YoonsikYu"
         git add output/it_data/
         git commit -m "Add output data from task1.py"
-        git push https://${{ env.GITHUB_USER }}:${{ env.PAT_TOKEN }}@github.com/YoonsikYu/assignment.git main
+        git push https://${{ env.GITHUB_USER }}:${{ env.PAT_TOKEN }}@github.com/YoonsikYu/assignment.git main 
 
 
 
