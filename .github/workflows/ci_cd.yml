@@ -22,10 +22,6 @@ jobs:
       with:
         fetch-depth: 2  # Fetch the last two commits to compare changes
 
-    - name: Ensure current branch is checked out
-      run: |
-        git checkout ${{ github.ref_name }}
-
     - name: Set up Python
       uses: actions/setup-python@v4
       with:
