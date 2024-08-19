@@ -1,0 +1,16 @@
+id,area,name,address,calls_made,call_success_rate,sales_amount
+708,Finance,Rosa de Jager,"Fabianring 277, 3274 DP, Gastel",52,67.31,99827.12
+910,Finance,Dylano van Enschot-Meyer,"2847 LC, Westwoud",88,69.32,99795.03
+864,Finance,Ceylin van Voorst,"Fayweg 82, 7959 WD, Middenmeer",100,95.0,67153.61
+97,Games,Stef van Schevinghuizen-Smit,"Silkeboulevard 7, 4900 PF, Warffum",45,57.78,99889.55
+168,Games,Lizzy van Nederlotharingen-Lensen,"Jordylaan 82, 6298 CA, Loosbroek",10,90.0,99488.94
+912,Games,Sven Lutterveld,"1406 XV, Meerssen",78,94.87,99056.55
+751,HR,Fenne Heijman-Blaak,"7156 NF, Ell",71,57.75,99381.57
+301,HR,Nora van Breukelveen,"Marasteeg 9, 4105 PC, Geldrop",45,64.44,99104.23
+32,HR,Lola van der Noot,"9082 AA, Hemelum",95,92.63,96114.92
+39,IT,Ali Hollander,"6805 VT, Oosterwijtwerd",70,77.14,99653.96
+349,IT,Hendrik de Keijser,"5472 YM, Zwagerbosch",87,51.72,99333.34
+159,IT,Amy Roessink-van Beieren,"5148 ZF, Vleuten",80,95.0,86228.9
+825,Marketing,Jayda Everts,"1344 EO, Ossendrecht",97,61.86,99308.29
+798,Marketing,Floris Glasses-Shupe,"7938 MU, Teuge",79,86.08,98337.7
+368,Marketing,Lara van Vlaanderen-van de Darnau,"5404 FP, Muiden",100,95.0,93065.36
