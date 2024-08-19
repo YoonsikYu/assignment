@@ -1,4 +1,4 @@
-name: Run Task1 and Save Output
+name: Run Changed Python Scripts in src and Save Outputs
 
 on:
   push:
@@ -9,7 +9,7 @@ on:
       - main
 
 jobs:
-  run-task1:
+  run-changed-scripts:
     runs-on: ubuntu-latest
 
     strategy:
@@ -19,6 +19,8 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v3
+      with:
+        fetch-depth: 2  # Ensure we have at least the last two commits for comparison
 
     - name: Set up Python
       uses: actions/setup-python@v4
@@ -30,20 +32,42 @@ jobs:
         python -m pip install --upgrade pip
         pip install pyspark==3.5.0
 
-    - name: Run task1.py
+    - name: Identify changed scripts
+      id: changes
       run: |
-        python src/task1.py
+        CHANGED_FILES=$(git diff --name-only HEAD~1 HEAD | grep "^src/.*\.py$")
+        echo "Changed files: $CHANGED_FILES"
+        echo "::set-output name=changed_files::$CHANGED_FILES"
 
-    - name: Commit output files
+    - name: Run changed Python scripts
+      if: steps.changes.outputs.changed_files != ''
+      run: |
+        for script in ${{ steps.changes.outputs.changed_files }}; do
+          echo "Running $script"
+          python "$script"
+        done
+
+    - name: Commit output files and create a new branch
+      if: steps.changes.outputs.changed_files != ''
       env:
         GITHUB_USER: "YoonsikYu"
         PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
       run: |
         git config --global user.email "sengwun2@naver.com"
         git config --global user.name "YoonsikYu"
-        git add output/it_data/
-        git commit -m "Add output data from task1.py"
-        git push https://${{ env.GITHUB_USER }}:${{ env.PAT_TOKEN }}@github.com/YoonsikYu/assignment.git main 
+        git checkout -b output-update-branch
+        git add output/
+        git commit -m "Add output data from changed scripts"
+        git push https://${{ env.GITHUB_USER }}:${{ env.PAT_TOKEN }}@github.com/YoonsikYu/assignment.git output-update-branch
 
+    - name: Create Pull Request
+      if: steps.changes.outputs.changed_files != ''
+      env:
+        GITHUB_USER: "YoonsikYu"
+        PAT_TOKEN: ${{ secrets.PAT_TOKEN }}
+      run: |
+        PR_URL=$(curl -s -H "Authorization: token ${{ env.PAT_TOKEN }}" -X POST -d "{\"title\":\"Add output data from changed scripts\",\"head\":\"output-update-branch\",\"base\":\"main\"}" https://api.github.com/repos/${{ env.GITHUB_USER }}/assignment/pulls | jq -r .html_url)
+        echo "Pull request created: $PR_URL"
+ 
 
 
