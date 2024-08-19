@@ -37,9 +37,7 @@ jobs:
     - name: Commit output files
       run: |
         git config --global user.email "sengwun2@naver.com"
-        git config --global user.name "Yoonsik"
+        git config --global user.name "YoonsikYu"
         git add output/it_data/
         git commit -m "Add output data from task1.py"
-        git push origin main
- 
-              
+        git push https://<your-github-username>:${{ secrets.PAT_TOKEN }}@github.com/YoonsikYu/assignment.git main
