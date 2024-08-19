@@ -1,0 +1,199 @@
+id,area,calls_made,calls_successful,name,address,sales_amount,zipcode
+2,Marketing,41,21,Evie Godfrey van Alemannië-Smits,"1808 KR, Benningbroek",69087.12,1808 KR
+10,Marketing,26,15,Rosa Kuipers,"Jetlaan 816, 8779 EM, Holwierde",37606.9,8779 EM
+13,Marketing,2,1,Azra de Grunt,"4893 FF, Oss",96145.23,4893 FF
+16,Marketing,20,16,Dani Rijcken,"Nadiaring 992, 6189 BM, Slagharen",58748.63,6189 BM
+19,Marketing,79,71,Esmee Wipstrik,"7766 ZG, Overveen",73237.29,7766 ZG
+22,Marketing,7,4,Pieter van Dommelen,"7245 NT, Heeze",84520.0,7245 NT
+23,Marketing,23,16,Emir Breugelensis,"2764 NQ, Terherne",73115.48,2764 NQ
+28,Marketing,51,41,Thijs Gruijl,"Mustafaweg 488, 9748 BY, Taarlo",84178.45,9748 BY
+58,Marketing,4,3,Phileine Huurdeman,"1849 ZL, Sonnega",82580.83,1849 ZL
+61,Marketing,2,1,Azra Claesner,"Aliciaring 665, 9673 IW, Windraak",48783.07,9673 IW
+64,Marketing,84,46,Luka Honing-Velderman,"Michaelpad 580, 8046 PC, Oost West en Middelbeers",73967.46,8046 PC
+65,Marketing,45,39,Joris Eelman,"3031 QF, Hengelo (Gld)",96252.87,3031 QF
+70,Marketing,58,48,Mara van der Ven,"1383 PV, Kapelle",41276.75,1383 PV
+74,Marketing,30,25,Laura Beijring-Broek,"1075 IH, Hedikhuizen",53837.12,1075 IH
+85,Marketing,4,2,Jack van de Ven,"Rafboulevard 8, 8369 HA, Wetsens",64958.88,8369 HA
+86,Marketing,17,10,Matthias Heinrichs,"Wouterlaan 310, 5715 FY, Zenderen",87566.17,5715 FY
+89,Marketing,22,12,Jordy Kosten,"4530 IS, Sint Anthonis",79127.83,4530 IS
+95,Marketing,18,9,Maurits de Pauw-van de Velde,"Luuklaan 729, 1004 CX, Sint Maartensbrug",61740.16,1004 CX
+98,Marketing,32,19,Mohammed de Mol,"9401 UO, Haulerwijk",76689.04,9401 UO
+110,Marketing,89,56,Britt Risma,"Wesleyring 2, 8737 ZN, Roggel",32998.23,8737 ZN
+117,Marketing,78,40,Stefan Geldens,"6371 NU, Eagum",70715.72,6371 NU
+125,Marketing,63,39,Ella Boddaugh,"2660 FA, Harbrinkhoek",73377.06,2660 FA
+127,Marketing,15,7,Mark Bolkesteijn,"Demidreef 8, 7535 LE, Gellicum",77116.78,7535 LE
+132,Marketing,50,28,Jonas Takkelenburg,"7439 AF, Alteveer gem Hoogeveen",85961.53,7439 AF
+150,Marketing,87,59,Femke Goyaerts van Waderle,"9083 EO, Sprang-Capelle",85782.82,9083 EO
+152,Marketing,45,35,Quinty Bruijne van der Veen,"4158 HQ, Tzum",30768.83,4158 HQ
+166,Marketing,74,39,Evy van Gemert,"1363 VZ, Jelsum",66304.14,1363 VZ
+178,Marketing,69,48,Olaf de Keijser,"2373 KH, Ledeacker",62045.93,2373 KH
+184,Marketing,100,77,Kai Lafleur,"Yarasteeg 3, 1042 JK, Meerkerk",53413.96,1042 JK
+185,Marketing,25,15,Ayden Maaswinkel,"6427 KH, Eck en Wiel",85857.33,6427 KH
+186,Marketing,52,33,Evi Claesdr,"Pimlaan 2, 4405 BJ, Grevenbicht",58105.24,4405 BJ
+190,Marketing,24,21,Jayda van de Brink,"Isabelboulevard 678, 7046 UC, Scharmer",51792.84,7046 UC
+191,Marketing,26,15,Naud Blokland,"Jacksingel 78, 3829 RX, Hoek",59405.74,3829 RX
+195,Marketing,25,16,Tijs VI,"Hiddestraat 10, 3858 DM, Woldendorp",51756.27,3858 DM
+212,Marketing,100,81,Loek Blaak,"7736 AR, Toornwerd",78480.74,7736 AR
+213,Marketing,54,28,Jari Overdijk-van de Berg,"2057 JX, Megen",87712.28,2057 JX
+215,Marketing,88,67,Myrthe de Plantard,"1165 XY, De Bult",42749.55,1165 XY
+219,Marketing,94,85,Michael Billung,"Zoeyhof 93, 1935 HC, Ossenwaard",49491.01,1935 HC
+220,Marketing,54,48,Jan Velderman,"Thomashof 947, 9573 OR, Smakt",63972.41,9573 OR
+225,Marketing,69,54,Lily Schilt-Steenbakkers,"3249 ZT, Farmsum",58614.49,3249 ZT
+226,Marketing,35,18,Maurits de Bruin,"Xavisteeg 8, 7625 BF, Sondel",61450.89,7625 BF
+230,Marketing,40,25,Helena Welf-Huls,"Benjaminpad 02, 5064 KZ, Wjelsryp",65101.84,5064 KZ
+235,Marketing,58,51,Aron Dubois-van Hamaland,"Maraboulevard 490, 3061 AN, Spanbroek",31771.82,3061 AN
+242,Marketing,91,58,Evy Stook,"7228 UV, Doniaga",77946.35,7228 UV
+245,Marketing,13,11,Angelina Le Grand-Vrancken,"5815 UA, Ellertshaar",32873.42,5815 UA
+246,Marketing,87,60,Noud Merckx,"Miabaan 4, 1546 ZT, Nijbroek",93576.26,1546 ZT
+252,Marketing,65,44,Raf Manne,"4120 II, Lemelerveld",90877.47,4120 II
+253,Marketing,72,55,Jamie van der Sande,"6453 IQ, Klooster Lidlum",75786.34,6453 IQ
+254,Marketing,92,78,Ties Genefaas,"Timodreef 4, 8875 PX, Dussen",48088.46,8875 PX
+266,Marketing,1,0,Ibrahim Eijkelboom-van Orleans,"Joshuabaan 1, 1377 KT, Boer",37089.79,1377 KT
+280,Marketing,69,53,Imke Manne,"6412 YG, Demen",71655.35,6412 YG
+283,Marketing,78,53,Nick Klerks,"Sarasteeg 6, 6987 DJ, Snikzwaag",81671.24,6987 DJ
+288,Marketing,74,56,Aya Ligtvoet,"1699 YX, Castelre",50575.01,1699 YX
+295,Marketing,56,39,Sami Carnotte,"4410 EA, Kropswolde",40886.47,4410 EA
+313,Marketing,64,51,Evi Flink-Geneart,"8715 XR, Kommerzijl",40464.81,8715 XR
+315,Marketing,52,38,Siem Klein,"6587 WG, Ellewoutsdijk",72779.16,6587 WG
+320,Marketing,32,17,Aaron Scardino,"1397 YV, Oranje",81560.72,1397 YV
+325,Marketing,77,42,Bo Soos-Huurdeman,"Megandreef 0, 1457 IU, Lemmer",63625.57,1457 IU
+326,Marketing,39,22,James Coolen,"7999 MD, Mook",40737.29,7999 MD
+327,Marketing,12,9,Dylan de Wit-de Bruijn,"Ayasteeg 4, 6535 VA, Aalsmeerderbrug",68213.13,6535 VA
+338,Marketing,71,60,Emily de Nijs,"6661 RY, Brandwijk",63524.88,6661 RY
+348,Marketing,98,59,Fay van Dokkum,"Casperdreef 0, 8450 UL, Katwoude",57317.48,8450 UL
+350,Marketing,89,53,Fay Kirpenstein,"3828 DI, Westerland",35523.95,3828 DI
+359,Marketing,92,56,Anna van Egisheim,"Angelinabaan 489, 2981 IT, Nieuw-Beijerland",70592.83,2981 IT
+361,Marketing,86,64,Indy Vastenhouw,"5122 NK, Renkum",96103.19,5122 NK
+363,Marketing,38,31,Pien Lafleur,"1342 QU, Maasbree",72891.91,1342 QU
+364,Marketing,30,16,Sven Jaceps,"Daandreef 97, 3834 OC, Wichmond",42125.47,3834 OC
+368,Marketing,100,95,Lara van Vlaanderen-van de Darnau,"5404 FP, Muiden",93065.36,5404 FP
+370,Marketing,12,9,Pippa Geertsen,"3865 KM, Koudekerke",63042.79,3865 KM
+376,Marketing,28,18,Damian van de Velden,"Kianboulevard 711, 6806 EI, Westknollendam",82438.91,6806 EI
+378,Marketing,15,11,Lotte Scuylenborchs,"Tylerweg 431, 2986 BN, Babyloniënbroek",44116.31,2986 BN
+381,Marketing,13,10,Liz Joosten,"Lizzyboulevard 0, 5706 LA, Heerlen",59982.47,5706 LA
+396,Marketing,97,57,Esmée Marchand-Kathagen,"Thijmenlaan 59, 9650 RZ, Twello",83653.27,9650 RZ
+410,Marketing,68,61,Yara van Wel,"Quinnsteeg 939, 7289 ZR, Bad Nieuweschans",97639.98,7289 ZR
+414,Marketing,87,81,Mike Terry-van Venrooy,"Joëlring 7, 9591 VV, Almkerk",63459.75,9591 VV
+427,Marketing,5,2,Jens Appelman,"8281 PN, Zutphen",83091.47,8281 PN
+431,Marketing,26,14,Dean Kas,"3064 SA, Born",86125.68,3064 SA
+436,Marketing,47,25,Julia Hulshouts-Kallen,"1611 PR, Oudeschans",32845.01,1611 PR
+446,Marketing,41,25,Maya van Wessex,"7887 PE, Laren",37687.22,7887 PE
+452,Marketing,92,78,Mustafa Willems,"8676 FG, Peest",65320.25,8676 FG
+460,Marketing,1,0,Valerie Smits,"2974 AP, Blokker",86141.95,2974 AP
+462,Marketing,22,17,Xavi de Jong,"Beaupad 85, 5929 BH, Sint Pancras",93890.25,5929 BH
+471,Marketing,42,38,Amira van Alenburg,"Sethpad 42, 5977 NM, Klooster Lidlum",43691.99,5977 NM
+475,Marketing,38,26,Xavi de Werd,"1295 PP, Naaldwijk",52543.05,1295 PP
+476,Marketing,17,12,Joshua Bruynzeels-Bresé,"5632 WD, Uitwellingerga",42122.77,5632 WD
+481,Marketing,66,62,Pieter de Gruson,"2096 FH, Noordwijkerhout",81272.13,2096 FH
+490,Marketing,21,10,Koen Everts,"4521 QG, Aldtsjerk",35972.51,4521 QG
+491,Marketing,44,38,Jill Ferran,"Matthijssteeg 0, 2990 TG, Sappemeer",77194.45,2990 TG
+492,Marketing,34,17,Isa van Luyssel,"Feddehof 39, 8477 IC, Eys",70710.54,8477 IC
+505,Marketing,22,19,Robin van der Stael-Diesbergen,"2862 ZC, Ledeacker",31975.02,2862 ZC
+520,Marketing,5,2,Robin Thatcher-Jansen,"1476 SG, Bierum",59189.89,1476 SG
+525,Marketing,92,56,Evelien van Rooij,"5226 ZN, Schiphol-Rijk",44528.8,5226 ZN
+528,Marketing,85,46,Bjorn Smith,"Evapad 130, 9174 IX, Ubbena",57826.88,9174 IX
+536,Marketing,6,4,Ali Rademaker-Hehl,"Mickweg 35, 2486 HB, Vijlen",78856.56,2486 HB
+537,Marketing,71,50,Féline Wijland,"9973 LF, Oostwoud",45572.67,9973 LF
+538,Marketing,72,66,Koen Jonkman,"7736 WK, Zweeloo",70158.56,7736 WK
+549,Marketing,55,32,Michael Spanhaak,"1794 IO, Witte Paarden",58009.96,1794 IO
+564,Marketing,3,1,Cornelia van Santen-Wigman,"Lexhof 7, 1296 KP, Woldendorp",56615.56,1296 KP
+565,Marketing,36,26,Roos Vos,"1564 FW, Beesd",31895.04,1564 FW
+566,Marketing,53,45,Marinus die Witte,"5886 OM, Neerijnen",86739.01,5886 OM
+568,Marketing,30,17,Myrthe Weyland,"Mariaweg 97, 7897 OI, Goutum",85393.59,7897 OI
+569,Marketing,65,36,Joey Romijn-Goedhart,"Sennapad 054, 6748 IC, Hoensbroek",97581.76,6748 IC
+577,Marketing,14,10,Luca Glasses-Aertsz,"3487 EG, Luyksgestel",84661.09,3487 EG
+581,Marketing,9,4,Sepp de Pauw-van der Velden,"6719 UJ, Riethoven",37693.68,6719 UJ
+582,Marketing,77,61,Merle Klomp Jan,"6540 HF, Engwierum",77763.88,6540 HF
+584,Marketing,58,48,Sil Fremie,"7209 YJ, Hapert",66373.84,7209 YJ
+585,Marketing,21,13,Noah Le Marec-de Haan,"5391 QJ, Scharendijke",88599.27,5391 QJ
+586,Marketing,3,2,Elisa Rehorst-Vermeulen,"7234 CC, Goes",62656.63,7234 CC
+588,Marketing,6,3,Julia Huijs,"1819 CJ, Bemmel",53611.34,1819 CJ
+590,Marketing,33,18,Sam Schilt-Dennenberg,"Benbaan 505, 8724 SW, Heeswijk-Dinther",32209.17,8724 SW
+595,Marketing,53,40,Veerle Bekbergen,"2533 AS, Waterhuizen",70925.11,2533 AS
+597,Marketing,41,33,Lucy Koret,"7228 JR, Zeeland",65010.07,7228 JR
+600,Marketing,69,58,Dex Eelman,"8880 OV, Nijeholtpade",46130.33,8880 OV
+603,Marketing,46,40,Jim Schipper,"7702 LP, Koudum",56727.83,7702 LP
+606,Marketing,81,71,Ninthe van Berkel,"9769 IZ, Bentveld",51600.86,9769 IZ
+607,Marketing,78,53,Gijs Timmermans,"Lottesingel 7, 8991 BC, Dearsum",89289.0,8991 BC
+612,Marketing,44,25,Stijn Mathieu,"5135 RO, Vledderveen",61157.28,5135 RO
+615,Marketing,34,25,Jolijn Fredriks-Overeem,"3849 CH, Obbicht",91945.39,3849 CH
+622,Marketing,84,47,Benjamin Heijmans-Cornelisse,"9074 QH, Den Bommel",85978.16,9074 QH
+626,Marketing,54,36,Adriana de Roos,"2328 WD, Geerdijk",90194.5,2328 WD
+629,Marketing,48,29,Sander van der Noot,"Jolijnsingel 7, 7373 HP, Tuitjenhorn",34056.14,7373 HP
+630,Marketing,76,52,Thijs de Bruin-van Wel,"Ashleystraat 958, 3410 XJ, Rouveen",81135.96,3410 XJ
+633,Marketing,33,29,Thom Knuf,"Catolaan 94, 1179 WN, Balgoij",52247.81,1179 WN
+638,Marketing,79,50,Linde Bresé,"Jaydenstraat 01, 2713 YF, Twijzel",51156.9,2713 YF
+639,Marketing,76,52,Faye Steenbakkers,"1383 BV, Asten",67314.48,1383 BV
+651,Marketing,98,91,Linn Thout,"Rikweg 540, 8021 RB, Cromvoirt",97074.34,8021 RB
+654,Marketing,15,9,Marijn Charon,"Berathof 75, 4264 UU, Enspijk",47967.26,4264 UU
+655,Marketing,1,0,Merle Otto,"1485 TG, Houwerzijl",62310.23,1485 TG
+666,Marketing,24,21,Silke Berendse,"1624 QZ, Knegsel",84260.73,1624 QZ
+676,Marketing,47,29,Azra Jansen,"4816 BQ, Ohé en Laak",87920.57,4816 BQ
+678,Marketing,100,57,Feline Hoeks-Wouters van Eijndhoven,"Chloëboulevard 45, 9303 NY, Hoorn",91884.39,9303 NY
+692,Marketing,17,8,Amélie van Susa,"2569 HN, Raamsdonk",49488.21,2569 HN
+693,Marketing,31,20,Joshua Jansen-Marchal,"5889 UD, Pesse",34228.24,5889 UD
+694,Marketing,37,25,Chris Peronne,"Brampad 3, 2139 DG, Eagum",67302.36,2139 DG
+703,Marketing,58,42,Kick Schenk,"4784 KL, Garmerwolde",78750.13,4784 KL
+710,Marketing,58,41,Vincent Beijring-Godfrey van Alemannië,"2883 HU, Bitgum",59185.02,2883 HU
+711,Marketing,65,34,Vera van Dokkum,"Mettering 74, 7315 VE, Dalfsen",70569.39,7315 VE
+713,Marketing,26,13,Ties van Vlaanderen,"1019 JA, Saaksum",80972.94,1019 JA
+716,Marketing,86,52,Marinus Elberts,"Aydenstraat 9, 3407 AP, Ter Aar",87864.67,3407 AP
+721,Marketing,80,45,Leon Bolkesteijn,"Julianstraat 8, 2106 CU, Ell",47647.56,2106 CU
+726,Marketing,73,62,Sienna Drysdale-Elbertse,"4809 QU, Nispen",42410.27,4809 QU
+728,Marketing,48,35,Stan van Breukelveen,"1276 VJ, Ruinerwold",48619.55,1276 VJ
+735,Marketing,54,48,Ella van Loon-Wigman,"4679 PW, Midwolde",31318.06,4679 PW
+738,Marketing,12,7,Joël Brizee,"2864 CS, De Bult",95332.82,2864 CS
+743,Marketing,11,5,Imke d' Heripon,"Zoëhof 37, 8206 PV, Westkapelle",52031.25,8206 PV
+750,Marketing,42,39,Jip Schenkel-Bruijne van der Veen,"8326 NW, Epse",60143.99,8326 NW
+753,Marketing,95,51,Zara Le Grand,"6805 JX, Chaam",59139.72,6805 JX
+756,Marketing,44,33,Tess Woudenberg-Latier,"5167 LR, Wintelre",88711.8,5167 LR
+765,Marketing,75,61,Isa Bloemendaal,"Aminaboulevard 9, 3632 NX, Harich",62198.65,3632 NX
+767,Marketing,72,39,Aron Schrik,"Ayabaan 2, 3444 NJ, Nederasselt",56566.71,3444 NJ
+783,Marketing,43,23,Lynn Jansdr,"Faysingel 06, 3196 MA, Wilsum",77732.84,3196 MA
+787,Marketing,2,1,Saar d' Heripon,"3043 RD, Nunhem",81800.57,3043 RD
+788,Marketing,41,34,Julius Scardino,"1501 RQ, Strijbeek",35154.07,1501 RQ
+797,Marketing,15,10,Mila van Formbach,"6903 BN, Waardhuizen",96458.68,6903 BN
+798,Marketing,79,68,Floris Glasses-Shupe,"7938 MU, Teuge",98337.7,7938 MU
+808,Marketing,8,7,Suus Boddaugh,"Matsweg 6, 8044 JN, Teerns",53878.25,8044 JN
+812,Marketing,44,41,Leah Pauwels,"3220 WD, Tjalleberd",44457.64,3220 WD
+814,Marketing,7,4,Ruben Postma,"Elizahof 2, 6452 BP, Alteveer gem Hoogeveen",80042.32,6452 BP
+816,Marketing,76,62,Jennifer Riem-van Breukelveen,"Stanweg 45, 6389 OE, Budel-Dorplein",76485.9,6389 OE
+818,Marketing,86,59,Simon van Stralen-de Koning,"6636 RU, Netersel",74541.08,6636 RU
+823,Marketing,38,19,Maryam Bernaards,"5328 QJ, Haastrecht",30488.6,5328 QJ
+825,Marketing,97,60,Jayda Everts,"1344 EO, Ossendrecht",99308.29,1344 EO
+830,Marketing,32,26,Jari Kremer,"Ninthering 548, 3708 AI, Mookhoek",37171.43,3708 AI
+834,Marketing,39,19,Joëlle Prins,"Imransingel 20, 7279 WQ, Stiens",89136.26,7279 WQ
+835,Marketing,55,28,Amir Soos-Kisman,"Meikering 7, 7174 DQ, Kolhorn",70962.11,7174 DQ
+844,Marketing,92,62,Michelle Reijers,"4691 IS, Boijl",40032.98,4691 IS
+855,Marketing,50,45,Jenna Jdotte,"Benboulevard 84, 1656 KJ, Puth",38351.18,1656 KJ
+856,Marketing,19,14,Rosalie Smeets,"Masonbaan 680, 6707 IR, Neeritter",75359.47,6707 IR
+859,Marketing,76,64,Evy van Mook,"9286 WX, Rockanje",73060.84,9286 WX
+863,Marketing,27,21,Luuk Huberts,"Isalaan 328, 4673 YB, Steyl",49213.4,4673 YB
+865,Marketing,15,12,Jelle Schwartsbach-Dekker,"1270 XV, Vlieland",53412.63,1270 XV
+867,Marketing,60,33,Benthe Vos-Thout,"Olafsingel 296, 7599 JU, Zegveld",80161.12,7599 JU
+877,Marketing,76,49,Teun Janssen-Bave,"5053 BN, Nieuwersluis",56240.76,5053 BN
+879,Marketing,23,12,Marinus Kalman-van der Pol,"Lottehof 279, 1664 CZ, Burgum",30388.75,1664 CZ
+882,Marketing,52,29,Puck Huisman-Mol,"6928 HK, Zuiddorpe",86438.39,6928 HK
+884,Marketing,80,75,Siem Poncelet-de Gruil,"Leonsingel 834, 3698 VF, Sint Joost",91281.03,3698 VF
+899,Marketing,46,27,Emir Uphaus,"Sylviehof 078, 4996 SS, Zeijen",58711.22,4996 SS
+900,Marketing,60,35,Jordy Hellevoort-Reimes,"3423 SK, Ursem",95718.35,3423 SK
+901,Marketing,100,89,Jason van Dommelen,"9075 LH, Doldersum",93772.71,9075 LH
+903,Marketing,91,59,Evie Geneart,"5110 HC, Teroele",84729.96,5110 HC
+918,Marketing,10,7,Lukas Kamp,"2019 TH, Gelselaar",72915.38,2019 TH
+919,Marketing,44,25,Fem van der Stael-van Heusden,"3987 KP, Ommen",87938.13,3987 KP
+921,Marketing,55,34,Vigo Lagerweij,"Sterreweg 520, 9483 SF, Akersloot",98174.62,9483 SF
+924,Marketing,16,10,Jason de Gruijter,"9773 TQ, Siebengewald",53149.27,9773 TQ
+945,Marketing,98,50,Lisanne Suijker,"3526 WY, Nuth",78791.64,3526 WY
+949,Marketing,87,43,Kian van Stralen-Schagen,"Jetweg 9, 3316 KU, Elahuizen",76879.04,3316 KU
+952,Marketing,49,33,Jake Nijman-Bartels,"1550 WQ, Valburg",40554.77,1550 WQ
+959,Marketing,62,33,Bram Wensen-van de Wal,"8598 OI, Eexterveenschekanaal",50382.56,8598 OI
+961,Marketing,64,58,Nick Buijs,"Simonweg 584, 8254 DF, Hee",58242.32,8254 DF
+966,Marketing,46,36,Bram Kirpenstein,"Siennadreef 261, 4471 XG, Rossum",68077.49,4471 XG
+970,Marketing,52,38,Jaylinn Kramer-Cornelisz,"7603 AS, Zandvoort",75099.29,7603 AS
+978,Marketing,9,7,Maurits Bosman,"1247 MU, Wieringerwerf",32636.37,1247 MU
+979,Marketing,86,80,Yusuf Beernink,"1373 PZ, Merkelbeek",37259.92,1373 PZ
+980,Marketing,26,23,Naomi de Boer,"5386 OR, Oosterwolde",83145.34,5386 OR
+981,Marketing,88,52,Rosalie Kuijpers-Lamore,"Sarabaan 27, 9347 MZ, Babberich",48710.77,9347 MZ
+984,Marketing,37,23,Robin Aeije,"6604 AT, Wolfheze",96540.38,6604 AT
+988,Marketing,65,44,Thom van Maaren,"Maryamstraat 24, 6765 QC, Oosthuizen",76862.42,6765 QC
+996,Marketing,75,47,Jinthe Cant,"Amirasteeg 0, 5954 GN, Wijnbergen",53251.38,5954 GN
