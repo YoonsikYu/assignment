@@ -30,4 +30,4 @@ jobs:
                 pip install pyspark==3.5.0
             
             - name: Test App Code
-              run: python src/task1.py
+              run: python src/task1.py 
