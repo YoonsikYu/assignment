@@ -17,7 +17,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
       with:
-        fetch-depth: 2  # Fetch the last two commits to compare changes
+        fetch-depth: 0  # Fetch all history so branches and refs are available
 
     - name: Determine base branch
       id: determine_base
@@ -56,6 +56,7 @@ jobs:
       run: |
         git config --global user.email "sengwun2@naver.com"
         git config --global user.name "YoonsikYu"
+        git checkout ${{ steps.determine_base.outputs.base_branch }} || git checkout -b ${{ steps.determine_base.outputs.base_branch }}
         git add output/
         git commit -m "Add output data from changed scripts"
-        git push https://${{ env.GITHUB_USER }}:${{ env.PAT_TOKEN }}@github.com/YoonsikYu/assignment.git ${{ steps.determine_base.outputs.base_branch }}
+        git push https://${{ env.GITHUB_USER }}:${{ env.PAT_TOKEN }}@github.com/YoonsikYu/assignment.git HEAD:${{ steps.determine_base.outputs.base_branch }}
