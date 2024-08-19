@@ -36,8 +36,8 @@ jobs:
 
     - name: Commit output files
       run: |
-        git config --global user.email "your-email@example.com"
-        git config --global user.name "Your Name"
+        git config --global user.email "sengwun2@naver.com"
+        git config --global user.name "Yoonsik"
         git add output/it_data/
         git commit -m "Add output data from task1.py"
         git push origin main
