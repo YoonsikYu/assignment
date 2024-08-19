@@ -1,4 +1,4 @@
-name: assignment App tests
+name: Assignment App Tests
 
 on:
     pull_request:
@@ -8,18 +8,14 @@ on:
 jobs:
     test:
         runs-on: ubuntu-latest
-        defaults:
-            run:
-                working-directory: ./it_data/
 
         strategy:
             matrix:
-                python-version: [3.1]
+                python-version: [3.10]
 
         env:
             MODE: "dev"
-            
-        
+
         steps:
             - uses: actions/checkout@v3
 
@@ -34,4 +30,4 @@ jobs:
                 pip install pyspark==3.5.0
             
             - name: Test App Code
-              run: python ./main_task1.py
+              run: python src/task1.py
