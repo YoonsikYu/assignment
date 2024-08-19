@@ -1,9 +1,6 @@
 name: Run Changed Python Scripts and Save Output
 
 on:
-  push:
-    branches:
-      - '**'  # Run on push to any branch
   pull_request:
     branches:
       - '**'  # Run on any pull request
