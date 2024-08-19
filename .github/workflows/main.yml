@@ -8,9 +8,6 @@ on:
 jobs:
     test:
         runs-on: ubuntu-latest
-        defaults:
-            run:
-                working-directory: ./it_data/
 
         strategy:
             matrix:
@@ -33,4 +30,6 @@ jobs:
                 pip install pyspark==3.5.0
             
             - name: Test App Code
-              run: python ./main_task1.py
+              run: python src/task1.py
+
+              
