@@ -21,9 +21,18 @@ df_join = df3.join(df, df3.caller_id == df.id, 'left')
 dftest1 = df_join.groupBy('product_sold','country').agg(sum('quantity').alias('total_quantity'),sum('sales_amount').alias('total_sales_amount'))
 dftest1 = dftest1.withColumn('product_price', round(col('total_sales_amount')/col('total_quantity'),2)) 
 
-df_pivot = dftest1 .groupBy(col("product_sold").alias('product')) \
+dftest1_with_quantity = dftest1.groupBy("product_sold", "country") \
+                               .agg(
+                                   sum("total_quantity").alias("total_quantity_sold"),
+                                   first("product_price").alias("product_price")
+                               )
+
+df_pivot = dftest1_with_quantity.groupBy("product_sold") \
              .pivot("country") \
-             .agg({"product_price": "first"})
+             .agg(
+                 first("product_price").alias("product_price"),
+                 first("total_quantity_sold").alias("total_quantity_sold")
+             )
 
 output_path = os.path.join('output', 'extra_insight_one')
 
