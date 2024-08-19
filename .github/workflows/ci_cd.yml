@@ -54,4 +54,4 @@ jobs:
         git config --global user.name "YoonsikYu"
         git add output/
         git commit -m "Add output data from changed scripts"
-        git push https://${{ env.GITHUB_USER }}:${{ env.PAT_TOKEN }}@github.com/YoonsikYu/assignment.git ${{ github.ref_name }}
+        git push https://${{ env.GITHUB_USER }}:${{ env.PAT_TOKEN }}@github.com/YoonsikYu/assignment.git ${{ github.ref_name }} 

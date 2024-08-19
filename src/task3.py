@@ -49,5 +49,5 @@ output_path = os.path.join('output', 'department_breakdown')
 
 df_with_formatted_sales.coalesce(1).write.mode("overwrite").option("header", True).csv(output_path)
 
-spark.stop()    
+spark.stop()  
  
