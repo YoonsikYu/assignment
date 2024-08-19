@@ -18,4 +18,4 @@ output_path = r"C:\Users\SAMSUNG\Documents\it_data"
 
 IT_df.coalesce(1).write.mode("overwrite").option("header", True).csv(output_path)
 
-spark.stop()
+spark.stop()  
