@@ -1,0 +1,8 @@
+2024-09-01 19:32:06,631 - __main__ - INFO - Loading data from data/dataset_one.csv
+2024-09-01 19:32:14,990 - __main__ - INFO - Loading data from data/dataset_two.csv
+2024-09-01 19:32:15,530 - __main__ - INFO - Loading data from data/dataset_three.csv
+2024-09-01 19:32:16,175 - __main__ - INFO - Starting IT data processing...
+2024-09-01 19:32:16,276 - __main__ - INFO - Starting Marketing address information processing...
+2024-09-01 21:03:02,552 - __main__ - INFO - Loading data from data/dataset_one.csv
+2024-09-01 21:03:10,824 - __main__ - INFO - Loading data from data/dataset_two.csv
+2024-09-01 21:03:11,658 - __main__ - INFO - Loading data from data/dataset_three.csv
