@@ -40,6 +40,9 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
+    - name: Run tests
+      run: pytest tests/ --maxfail=1 --disable-warnings
+
     - name: Run changed Python scripts
       if: steps.changes.outputs.changed_files != ''
       run: |
