@@ -34,4 +34,4 @@ def test_process_marketing_address_info(spark):
     result_df = process_marketing_address_info(df1, df2)
        
     # Use chispa to compare DataFrames
-    assert_df_equality(result_df, expected_df, ignore_nullable=True)
+    assert_df_equality(result_df, expected_df, ignore_nullable=True) 
