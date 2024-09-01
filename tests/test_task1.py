@@ -32,6 +32,10 @@ def test_process_it_data(spark):
     
     # Run the function under test
     result_df = process_it_data(df1, df2)
-       
+    
+    # Sort DataFrames by all columns to ensure order is the same
+    result_df_sorted = result_df.orderBy(result_df.columns)
+    expected_df_sorted = expected_df.orderBy(expected_df.columns)
+    
     # Use chispa to compare DataFrames
-    assert_df_equality(result_df, expected_df, ignore_nullable=True) 
+    assert_df_equality(result_df_sorted, expected_df_sorted, ignore_nullable=True)
