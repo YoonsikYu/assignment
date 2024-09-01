@@ -19,14 +19,14 @@ def test_process_it_data(spark):
     ], ["id", "area", "calls_made", "calls_sucessful"])
     
     df2 = spark.createDataFrame([
-        (1, "Sep Cant-Vandenbergh", "2588VD", "57751"),
+        (1, "Sep Cant-Vandenbergh", "2588VD", "57750"),
         (2, "Evie Godfrey van Alemannië-Smits", "1808KR", "69087"),
         (3, "Vincent Mathurin", "4133HB", "44933"),
     ], ["id", "name", "address", "sales_amount"])
     
     # Expected output DataFrame
     expected_df = spark.createDataFrame([
-        (1, "IT", 34, 21, "Sep Cant-Vandenbergh", "2588VD", "57751"),
+        (1, "IT", 34, 21, "Sep Cant-Vandenbergh", "2588VD", "57750"),
         (2, "IT", 25, 20, "Evie Godfrey van Alemannië-Smits", "1808KR", "69087")
     ], ["id", "area", "calls_made", "calls_sucessful", "name", "address", "sales_amount"])
     
