@@ -26,7 +26,7 @@ jobs:
     - name: Identify changed Python scripts
       id: changes
       run: |
-        CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} HEAD | grep "^src/.*\.py$" || true)
+        CHANGED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} HEAD | grep "\.py$" || true)
         echo "Changed files: $CHANGED_FILES"
         echo "::set-output name=changed_files::$CHANGED_FILES"
 
