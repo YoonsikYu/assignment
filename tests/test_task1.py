@@ -34,4 +34,4 @@ def test_process_it_data(spark):
     result_df = process_it_data(df1, df2)
        
     # Use chispa to compare DataFrames
-    assert_df_equality(result_df, expected_df, ignore_nullable=True)
+    assert_df_equality(result_df, expected_df, ignore_nullable=True) 
