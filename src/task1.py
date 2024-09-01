@@ -28,4 +28,4 @@ def process_it_data(df1: DataFrame, df2: DataFrame) -> DataFrame:
     it_data_top100.coalesce(1).write.mode("overwrite").option("header", True).csv(output_path)
 
     logger.info("IT data processing completed successfully.")
-    return it_data_top100 
+    return it_data_top100
