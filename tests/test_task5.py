@@ -29,7 +29,7 @@ def test_process_top_3_most_sold(spark):
     df3 = spark.createDataFrame([
         (1, 40, "Verbruggen-Vermeulen CommV", "Anny Claessens", 45, "Belgium", "Banner", 50),
         (2, 17, "Hendrickx CV", "Lutgarde Van Loock", 41, "Belgium", "Sign", 23),
-        (3, 15, "Koninklijke Aelftrud van Wessex", "Mustafa Ehlert", 34, "Netherlands", "Headset", 1),
+        (3, 3, "Koninklijke Aelftrud van Wessex", "Mustafa Ehlert", 34, "Netherlands", "Billboard", 1),
     ], ["id", "caller_id", "company", "recipient", "age", "country", "product_sold", "quantity"])
 
     expected_df = spark.createDataFrame([
