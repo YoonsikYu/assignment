@@ -1,15 +1,15 @@
 import pytest
 from pyspark.sql import SparkSession
-from pyspark.sql.functions import col
 from chispa import assert_df_equality
-from src.extra_insight_one import extra_insight_one
-from pyspark.sql.types import IntegerType
+from pyspark.sql.types import DoubleType
+from pyspark.sql.functions import col
+from src.extra_insight import extra_insight_one
 
 @pytest.fixture(scope="module")
 def spark():
     return SparkSession.builder \
         .master("local") \
-        .appName("extra_insight_two") \
+        .appName("extra_insight_test") \
         .getOrCreate()
 
 def test_extra_insight_one(spark):
@@ -25,7 +25,7 @@ def test_extra_insight_one(spark):
         (8, "Games", 34, 23),
         (9, "Finance", 11, 34)
     ], ["id", "area", "calls_made", "calls_successful"])
-    
+
     df2 = spark.createDataFrame([
         (1, "Evie Godfrey van Alemannië-Smits", "1808 KR, Benningbroek", 69087.89),
         (2, "Rosa Kuipers", "Jetlaan 816, 8779 EM, Holwierde", 37606.23),
@@ -50,16 +50,15 @@ def test_extra_insight_one(spark):
         (9, 9, "sdfe", "werers", 22, "Germany", "Headset", 11)
     ], ["id", "caller_id", "company", "recipient", "age", "country", "product_sold", "quantity"])
 
+    # Corrected expected DataFrame
     expected_df = spark.createDataFrame([
-        ()
-        
         ("Sign", 352.64, 35, 1635.05, 23, 1006.25, 34),
         ("Headset", 6686.55, 35, 21613.11, 11, 44933.12, 1),
-        ("Banner", 1381.76, 50, 698.19, 32, 688.63, 34),
+        ("Banner", 1381.76, 50, 698.19, 32, 688.63, 34)
     ], ["product_sold", "Belgium_product_price", "Belgium_total_quantity_sold", "Germany_product_price", "Germany_total_quantity_sold", "Netherlands_product_price", "Netherlands_total_quantity_sold"])
 
     # Run the function under test
     result_df = extra_insight_one(df1, df2, df3)
-    
+
     # Use chispa to compare DataFrames
     assert_df_equality(result_df, expected_df, ignore_nullable=True)
