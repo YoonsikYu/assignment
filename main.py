@@ -6,7 +6,7 @@ from src.task1 import process_it_data
 from src.task2 import process_marketing_address_info
 from src.task3 import process_department_breakdown
 from src.task4 import process_top_3_performers
-#from src.task5 import process_top_3_most_sold
+from src.task5 import process_top_3_most_sold
 #from src.task6 import process_best_salesperson
 #from src.extra_insight_one import extra_insight_one
 #from src.extra_insight_two import extra_insight_two
@@ -81,8 +81,8 @@ def main():
     logger.info("Starting Top 3 performers processing...")
     process_top_3_performers(df1, df2)
     
-    #logger.info("Starting Top 3 most sold products processing...")
-    #process_top_3_most_sold(df1, df2, df3)
+    logger.info("Starting Top 3 most sold products processing in Netherlands...")
+    process_top_3_most_sold(df1, df2, df3)
     
     #logger.info("Starting Best salesperson processing...")
     #process_best_salesperson(df1, df2, df3)
