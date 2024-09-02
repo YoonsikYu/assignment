@@ -2,7 +2,6 @@ import logging
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.functions import col, sum, desc, row_number
 from pyspark.sql.window import Window
-from pyspark.sql.types import IntegerType
 import os
 
 logger = logging.getLogger(__name__)
@@ -18,9 +17,8 @@ def process_top_3_most_sold(df1: DataFrame, df2: DataFrame, df3: DataFrame) -> D
     return: A DataFrame containing the top 3 most sold products per department in the Netherlands.
     """
     logger.info("Joining datasets on 'id' and 'caller_id' columns...")
-    # Ensure that we select all necessary columns, including 'area'
     df = df1.join(df2, on='id', how='inner')
-    df_join = df3.join(df, df3.caller_id == df.id, 'left').select(df1["area"], df3["*"])
+    df_join = df3.join(df, df3.caller_id == df.id, 'left')
 
     logger.info("Filtering data for the Netherlands...")
     NL_df = df_join.filter(col('country') == 'Netherlands')
@@ -30,10 +28,7 @@ def process_top_3_most_sold(df1: DataFrame, df2: DataFrame, df3: DataFrame) -> D
 
     logger.info("Ranking products by total quantity sold within each area...")
     window_NL_sales = Window.partitionBy("area").orderBy(desc("total_quantity"))
-    df_NLsales = NL.withColumn("NL_sales_rank", row_number().over(window_NL_sales).cast(IntegerType())).filter(col("NL_sales_rank") <= 3)
-
-    # Debugging step: Check the content of df_NLsales to ensure 'area' is correctly populated
-    df_NLsales.show()
+    df_NLsales = NL.withColumn("NL_sales_rank", row_number().over(window_NL_sales)).filter(col("NL_sales_rank") <= 3)
 
     output_path = os.path.join('output', 'top_3_most_sold_per_department_netherlands')
     logger.info(f"Writing top 3 most sold products results to {output_path}...")
