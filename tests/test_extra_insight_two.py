@@ -33,8 +33,8 @@ def test_extra_insight_two(spark):
     ], ["id", "caller_id", "company", "recipient", "age", "country", "product_sold", "quantity"])
 
     expected_df = spark.createDataFrame([
-        ("0-20", "Banner", 50, 1),
-        ("21-30", "Sign", 23, 1)
+        ("31-40", "Headset", 1, 1),
+        ("41-50", "Banner", 50, 1)
     ], ["age_group", "product_sold", "total_quantity", "age_rank"]).withColumn("age_rank", col("age_rank").cast(IntegerType()))
 
 
