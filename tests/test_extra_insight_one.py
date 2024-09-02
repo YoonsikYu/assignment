@@ -3,7 +3,7 @@ from pyspark.sql import SparkSession
 from chispa import assert_df_equality
 from pyspark.sql.types import DoubleType
 from pyspark.sql.functions import col
-from src.extra_insight import extra_insight_one
+from src.extra_insight_one import extra_insight_one
 
 @pytest.fixture(scope="module")
 def spark():
