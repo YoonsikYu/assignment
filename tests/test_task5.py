@@ -33,7 +33,7 @@ def test_process_top_3_most_sold(spark):
     ], ["id", "caller_id", "company", "recipient", "age", "country", "product_sold", "quantity"])
 
     expected_df = spark.createDataFrame([
-        ("Marketing", "Headset", "Netherlands", 1, 10)
+        ("Marketing", "Headset", "Netherlands", 1, 1)
     ], ["area", "product_sold", "country", "total_quantity", "NL_sales_rank"])
 
     # Run the function under test
