@@ -1,0 +1,4 @@
+2024-09-02 14:01:22,525 - __main__ - INFO - Loading data from data/dataset_one.csv
+2024-09-02 14:01:34,460 - __main__ - INFO - Loading data from data/dataset_two.csv
+2024-09-02 14:01:35,437 - __main__ - INFO - Loading data from data/dataset_three.csv
+2024-09-02 14:01:36,101 - __main__ - INFO - Starting IT data processing...
