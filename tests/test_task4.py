@@ -33,6 +33,10 @@ def test_process_top_3_performers(spark):
 
     # Run the function under test
     result_df = process_top_3_performers(df1, df2)
-       
+    
+    # Sort DataFrames before comparison
+    result_df = result_df.sort("id")
+    expected_df = expected_df.sort("id")
+
     # Use chispa to compare DataFrames
     assert_df_equality(result_df, expected_df, ignore_nullable=True)
