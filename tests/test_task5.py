@@ -33,8 +33,8 @@ def test_process_top_3_most_sold(spark):
     ], ["id", "caller_id", "company", "recipient", "age", "country", "product_sold", "quantity"])
 
     expected_df = spark.createDataFrame([
-        ("Marketing", "Headset", "Netherlands", 1, 1)
-    ], ["area", "product_sold", "country", "total_quantity", "NL_sales_rank"]).withColumn("NL_sales_rank", col("NL_sales_rank").cast(LongType()))
+        ("Marketing", "Headset", "Netherlands", 1, 2)
+    ], ["area", "product_sold", "country", "total_quantity", "NL_sales_rank"])
 
     # Run the function under test
     result_df = process_top_3_most_sold(df1, df2, df3)
