@@ -34,4 +34,4 @@ def process_department_breakdown(spark):
     result_df = process_department_breakdown(df1, df2)
        
     # Use chispa to compare DataFrames
-    assert_df_equality(result_df, expected_df, ignore_nullable=True) 
+    assert_df_equality(result_df, expected_df, ignore_nullable=True)
