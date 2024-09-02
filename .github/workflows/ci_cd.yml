@@ -44,7 +44,8 @@ jobs:
       run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)/src" >> $GITHUB_ENV
 
     - name: Run tests
-      run: pytest tests/ --maxfail=1 --disable-warnings
+      run: |
+        pytest tests/ --maxfail=1 --disable-warnings
 
     - name: Run changed Python scripts
       if: steps.changes.outputs.changed_files != ''
