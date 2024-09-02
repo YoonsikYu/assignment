@@ -98,5 +98,5 @@ def main():
     logger.info("All tasks completed successfully.")
     spark.stop()
 
-##if __name__ == "__main__":
-##    main()   
+if __name__ == "__main__":
+    main()
