@@ -2,7 +2,7 @@ import pytest
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 from chispa import assert_df_equality
-from src.task6 import extra_insight_two
+from src.extra_insight_two import extra_insight_two
 from pyspark.sql.types import IntegerType
 
 @pytest.fixture(scope="module")
