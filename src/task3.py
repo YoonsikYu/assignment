@@ -60,4 +60,4 @@ def process_department_breakdown(df1: DataFrame, df2: DataFrame) -> DataFrame:
     df_with_formatted_sales.coalesce(1).write.mode("overwrite").option("header", True).csv(output_path)
 
     logger.info("Department breakdown processing completed successfully.")
-    return df_with_formatted_sales
+    return df_with_formatted_sales 
