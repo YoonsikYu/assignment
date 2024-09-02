@@ -2,7 +2,6 @@ import logging
 from pyspark.sql import DataFrame, SparkSession
 from pyspark.sql.functions import col, sum, desc, row_number
 from pyspark.sql.window import Window
-from pyspark.sql.types import IntegerType
 import os
 
 logger = logging.getLogger(__name__)
@@ -29,7 +28,7 @@ def process_top_3_most_sold(df1: DataFrame, df2: DataFrame, df3: DataFrame) -> D
 
     logger.info("Ranking products by total quantity sold within each area...")
     window_NL_sales = Window.partitionBy("area").orderBy(desc("total_quantity"))
-    df_NLsales = NL.withColumn("NL_sales_rank", row_number().over(window_NL_sales).cast(IntegerType())).filter(col("NL_sales_rank") <= 3)
+    df_NLsales = NL.withColumn("NL_sales_rank", row_number().over(window_NL_sales)).filter(col("NL_sales_rank") <= 3)
 
     output_path = os.path.join('output', 'top_3_most_sold_per_department_netherlands')
     logger.info(f"Writing top 3 most sold products results to {output_path}...")
