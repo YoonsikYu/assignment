@@ -18,7 +18,7 @@ def process_top_3_most_sold(df1: DataFrame, df2: DataFrame, df3: DataFrame) -> D
     """
     logger.info("Joining datasets on 'id' and 'caller_id' columns...")
     df = df1.join(df2, on='id', how='inner')
-    df_join = df3.join(df, df3.caller_id == df.id, 'left')
+    df_join = df3.join(df, df3.caller_id == df.id, 'left').select(df1["*"], df3["*"])
 
     logger.info("Filtering data for the Netherlands...")
     NL_df = df_join.filter(col('country') == 'Netherlands')
