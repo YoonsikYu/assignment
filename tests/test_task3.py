@@ -31,7 +31,7 @@ def process_department_breakdown(spark):
     ], ["area", "total_calls_made", "call_success_rate", "total_sales_amount(Million)"])
 
     # Run the function under test
-    result_df = process_marketing_address_info(df1, df2)
+    result_df = process_department_breakdown(df1, df2)
        
     # Use chispa to compare DataFrames
     assert_df_equality(result_df, expected_df, ignore_nullable=True) 
