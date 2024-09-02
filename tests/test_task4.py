@@ -26,9 +26,9 @@ def test_process_top_3_performers(spark):
 
     # Expected output DataFrame
     expected_df = spark.createDataFrame([
-        ("708", "Finance", "Rosa de Jager", "Fabianring 277, 3274 DP, Gastel", 52, 67.31, "99827.12"),
-        ("910", "Finance", "Dylano van Enschot-Meyer", "2847 LC, Westwoud", 88, 69.32, "99795.03" )
-        ("864", "Finance", "Ceylin van Voorst", "Fayweg 82, 7959 WD, Middenmeer", 100, 95.0, "67153.61")
+        ("708", "Finance", "Rosa de Jager", "Fabianring 277, 3274 DP, Gastel", 52, "67.31", "99827.12"),
+        ("910", "Finance", "Dylano van Enschot-Meyer", "2847 LC, Westwoud", 88, "69.32", "99795.03")
+        ("864", "Finance", "Ceylin van Voorst", "Fayweg 82, 7959 WD, Middenmeer", 100, "95.0", "67153.61")
     ], ["id", "area", "name", "address", "calls_made", "call_success_rate", "sales_amount"])
 
     # Run the function under test
