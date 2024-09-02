@@ -5,7 +5,7 @@ import os
 
 logger = logging.getLogger(__name__)
 
-def process_it_data(df1: DataFrame, df2: DataFrame) -> DataFrame:
+def process_it_data(df1: DataFrame, df2: DataFrame, output_dir='output/it_data') -> DataFrame:
     """
     Process IT data by joining two datasets, filtering for the IT department,
     ordering by sales amount, and saving the top 100 records to CSV.
@@ -23,7 +23,7 @@ def process_it_data(df1: DataFrame, df2: DataFrame) -> DataFrame:
     logger.info("Selecting top 100 records...")
     it_data_top100 = it_data.limit(100)
 
-    output_path = os.path.join('output', 'it_data')
+    output_path = os.path.join(output_dir, 'it_data')
     logger.info(f"Writing results to {output_path}...")
     it_data_top100.coalesce(1).write.mode("overwrite").option("header", True).csv(output_path)
 
