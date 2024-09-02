@@ -21,9 +21,9 @@ def test_process_best_salesperson(spark):
     ], ["id", "area", "calls_made", "calls_successful"])
     
     df2 = spark.createDataFrame([
-        (1, "Evie Godfrey van Alemannië-Smits", "1808 KR, Benningbroek", "69087.89"),
-        (2, "Rosa Kuipers", "Jetlaan 816, 8779 EM, Holwierde", "37606.23"),
-        (3, "Vincent Mathurin", "4133HB", "44933.12"),
+        (1, "Evie Godfrey van Alemannië-Smits", "1808 KR, Benningbroek", 69087.89),
+        (2, "Rosa Kuipers", "Jetlaan 816, 8779 EM, Holwierde", 37606.23),
+        (3, "Vincent Mathurin", "4133HB", 44933.12),
     ], ["id", "name", "address", "sales_amount"])
 
     df3 = spark.createDataFrame([
@@ -33,8 +33,8 @@ def test_process_best_salesperson(spark):
     ], ["id", "caller_id", "company", "recipient", "age", "country", "product_sold", "quantity"])
 
     expected_df = spark.createDataFrame([
-        ("Belgium", 1, "Evie Godfrey van Alemannië-Smits", "1808 KR, Benningbroek", 50, "69087.89", 1),
-        ("Netherlands", 3, "Vincent Mathurin", "4133HB", 1, "37606.23", 2)
+        ("Belgium", 1, "Evie Godfrey van Alemannië-Smits", "1808 KR, Benningbroek", 50, 69087.89, 1),
+        ("Netherlands", 3, "Vincent Mathurin", "4133HB", 1, 37606.23, 2)
     ], ["country", "caller_id", "name", "address", "total_quantity", "total_sales_amount", "global_sales_rank"]).withColumn("global_sales_rank", col("global_sales_rank").cast(IntegerType()))
 
 
