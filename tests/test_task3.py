@@ -27,9 +27,9 @@ def test_process_department_breakdown(spark):
 
         # Expected output DataFrame
     expected_df = spark.createDataFrame([
-        Row(area="Marketing", total_calls_made=67, call_success_rate="53.73%", total_sales_amount_Million="0.1M"),
-        Row(area="IT", total_calls_made=22, call_success_rate="54.55%", total_sales_amount_Million="0.0M")
-    ])
+        ("Marketing", 67, "60%", "1M"),
+        ("IT", 22, "70%", "0.5M")
+    ], ["area", "total_calls_made", "call_success_rate", "total_sales_amount(Million)"])
 
     # Run the function under test
     result_df = process_department_breakdown(df1, df2)
