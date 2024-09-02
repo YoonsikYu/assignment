@@ -28,8 +28,8 @@ def test_extra_insight_one(spark):
         (5, "Sara", "3423ds", 23413.32),
         (6, "Tom", "2341sd", 12342.31),
         (7, "JP", "2123ds", 34212.36),
-        (8, "WP", "1255fd", 234029,21),
-        (9, "EE", "4442df", 237744,21)
+        (8, "WP", "1255fd", 234029.21),
+        (9, "EE", "4442df", 237744.21)
     ], ["id", "name", "address", "sales_amount"])
 
     df3 = spark.createDataFrame([
