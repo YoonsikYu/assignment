@@ -8,7 +8,7 @@ from src.task3 import process_department_breakdown
 from src.task4 import process_top_3_performers
 from src.task5 import process_top_3_most_sold
 from src.task6 import process_best_salesperson
-#from src.extra_insight_one import extra_insight_one
+from src.extra_insight_one import extra_insight_one
 from src.extra_insight_two import extra_insight_two
 
 def setup_logging(log_file='logs/data_processing.log') -> logging.Logger:
@@ -87,14 +87,14 @@ def main():
     logger.info("Starting Best salesperson processing...")
     process_best_salesperson(df1, df2, df3)
     
-    #logger.info("Running Extra Insight One...")
+    logger.info("Running Extra Insight One...")
     #extra_insight_one(df1, df2, df3)
     
     logger.info("Running Extra Insight Two...")
     extra_insight_two(df1, df2, df3)
 
-    #logger.info("All tasks completed successfully.")
-    #spark.stop()
+    logger.info("All tasks completed successfully.")
+    spark.stop()
 
 if __name__ == "__main__":
     main()
