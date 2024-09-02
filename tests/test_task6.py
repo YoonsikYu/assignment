@@ -27,8 +27,8 @@ def test_process_best_salesperson(spark):
     ], ["id", "name", "address", "sales_amount"])
 
     df3 = spark.createDataFrame([
-        (1, 40, "Verbruggen-Vermeulen CommV", "Anny Claessens", 45, "Belgium", "Banner", 50),
-        (2, 17, "Hendrickx CV", "Lutgarde Van Loock", 41, "Belgium", "Sign", 23),
+        (1, 1, "Verbruggen-Vermeulen CommV", "Anny Claessens", 45, "Belgium", "Banner", 50),
+        (2, 2, "Hendrickx CV", "Lutgarde Van Loock", 41, "Belgium", "Sign", 23),
         (3, 3, "Koninklijke Aelftrud van Wessex", "Mustafa Ehlert", 34, "Netherlands", "Headset", 1),
     ], ["id", "caller_id", "company", "recipient", "age", "country", "product_sold", "quantity"])
 
