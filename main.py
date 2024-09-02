@@ -75,8 +75,8 @@ def main():
     logger.info("Starting Marketing address information processing...")
     process_marketing_address_info(df1, df2)
     
-    #logger.info("Starting Department breakdown processing...")
-    #process_department_breakdown(df1, df2)
+    logger.info("Starting Department breakdown processing...")
+    process_department_breakdown(df1, df2)
     
     #logger.info("Starting Top 3 performers processing...")
     #process_top_3_performers(df1, df2)
