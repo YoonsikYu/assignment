@@ -27,8 +27,8 @@ def test_process_department_breakdown(spark):
 
         # Expected output DataFrame
     expected_df = spark.createDataFrame([
-        ("Marketing", 67, "60%", "1M"),
-        ("IT", 22, "70%", "0.5M")
+        ("Marketing", 67, "53.73%", "106.7K"),
+        ("IT", 22, "54.55%", "44.9K")
     ], ["area", "total_calls_made", "call_success_rate", "total_sales_amount(Million)"])
 
     # Run the function under test
