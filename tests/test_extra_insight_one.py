@@ -18,6 +18,12 @@ def test_extra_insight_one(spark):
         (1, "Marketing", 41, 21),
         (2, "Marketing", 26, 15),
         (3, "IT", 22, 12),
+        (4, "IT", 23, 34),
+        (5, "HR", 34, 21),
+        (6, "HR", 21, 34),
+        (7, "Games", 82, 34),
+        (8, "Games", 34, 23),
+        (9, "Finance", 11, 34)
     ], ["id", "area", "calls_made", "calls_successful"])
     
     df2 = spark.createDataFrame([
