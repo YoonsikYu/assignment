@@ -2,6 +2,8 @@ import pytest
 from pyspark.sql import SparkSession
 from chispa import assert_df_equality
 from src.task5 import process_top_3_most_sold
+from pyspark.sql.types import LongType
+from pyspark.sql.functions import col
 
 @pytest.fixture(scope="module")
 def spark():
@@ -33,7 +35,7 @@ def test_process_top_3_most_sold(spark):
 
     expected_df = spark.createDataFrame([
         ("Marketing", "Headset", "Netherlands", 1, 1)
-    ], ["area", "product_sold", "country", "total_quantity", "NL_sales_rank"])
+    ], ["area", "product_sold", "country", "total_quantity", "NL_sales_rank"]).withColumn("NL_sales_rank", col("NL_sales_rank").cast(LongType()))
     
     # Run the function under test
     result_df = process_top_3_most_sold(df1, df2, df3)
