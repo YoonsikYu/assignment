@@ -17,7 +17,7 @@ def test_process_department_breakdown(spark):
         (1, "Marketing", 41, 21),
         (2, "Marketing", 26, 15),
         (3, "IT", 22, 12),
-    ], ["id", "area", "calls_made", "calls_sucessful"])
+    ], ["id", "area", "calls_made", "calls_successful"])
     
     df2 = spark.createDataFrame([
         (1, "Evie Godfrey van Alemannië-Smits", "1808 KR, Benningbroek", "69087"),
