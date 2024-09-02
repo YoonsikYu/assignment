@@ -28,7 +28,7 @@ def test_extra_insight_one(spark):
 
     df3 = spark.createDataFrame([
         (1, 1, "Verbruggen-Vermeulen CommV", "Anny Claessens", 45, "Belgium", "Banner", 50),
-        (2, 2, "Hendrickx CV", "Lutgarde Van Loock", 41, "Belgium", "Sign", 23),
+        (2, 2, "Hendrickx CV", "Lutgarde Van Loock", 41, "Germany", "Sign", 23),
         (3, 3, "Koninklijke Aelftrud van Wessex", "Mustafa Ehlert", 34, "Netherlands", "Headset", 1),
     ], ["id", "caller_id", "company", "recipient", "age", "country", "product_sold", "quantity"])
 
