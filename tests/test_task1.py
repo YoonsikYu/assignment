@@ -12,13 +12,13 @@ def spark():
 
 def test_process_it_data(spark):
     # Create example input data
-    df1 = spark.createDataFrame([
+    df1_test = spark.createDataFrame([
         (1, "IT", 34, 21),
         (2, "IT", 25, 20),
         (3, "Marketing", 22, 12),
     ], ["id", "area", "calls_made", "calls_sucessful"])
     
-    df2 = spark.createDataFrame([
+    df2_test = spark.createDataFrame([
         (1, "Sep Cant-Vandenbergh", "2588VD", "57750"),
         (2, "Evie Godfrey van Alemannië-Smits", "1808KR", "69087"),
         (3, "Vincent Mathurin", "4133HB", "44933"),
@@ -31,7 +31,7 @@ def test_process_it_data(spark):
     ], ["id", "area", "calls_made", "calls_sucessful", "name", "address", "sales_amount"])
     
     # Run the function under test
-    result_df = process_it_data(df1, df2)
+    result_df = process_it_data(df1_test, df2_test)
     
     # Sort DataFrames by all columns to ensure order is the same
     result_df_sorted = result_df.orderBy(result_df.columns)
