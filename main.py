@@ -3,7 +3,7 @@ import os
 from logging.handlers import RotatingFileHandler
 from pyspark.sql import SparkSession
 from src.task1 import process_it_data
-#from src.task2 import process_marketing_address_info
+from src.task2 import process_marketing_address_info
 #from src.task3 import process_department_breakdown
 #from src.task4 import process_top_3_performers
 #from src.task5 import process_top_3_most_sold
@@ -72,8 +72,8 @@ def main():
     logger.info("Starting IT data processing...")
     process_it_data(df1, df2)
     
-    #logger.info("Starting Marketing address information processing...")
-    #process_marketing_address_info(df1, df2)
+    logger.info("Starting Marketing address information processing...")
+    process_marketing_address_info(df1, df2)
     
     #logger.info("Starting Department breakdown processing...")
     #process_department_breakdown(df1, df2)
