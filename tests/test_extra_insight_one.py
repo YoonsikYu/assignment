@@ -51,9 +51,9 @@ def test_extra_insight_one(spark):
     ], ["id", "caller_id", "company", "recipient", "age", "country", "product_sold", "quantity"])
 
     expected_df = spark.createDataFrame([
-        ("Headset", 2790.97, 4290, 2571.58, 3870, 2574.8, 3706),
-        ("Sign", 2526.46, 4680, 2695.61, 4306, 2806.17, 3921),
-        ("Banner", 2657.67, 4450, 2740.35, 4264, 2894.26, 3910)
+        ("Headset", 6686.55, 35, 21613.11, 11, 44933.12, 1),
+        ("Sign", 352.64, 35, 1635.05, 23, 1006.25, 34),
+        ("Banner", 1381.76, 50, 698.19, 32, 688.63, 34)
     ], ["product_sold", "Belgium_product_price", "Belgium_total_quantity_sold", "Germany_product_price", "Germany_total_quantity_sold", "Netherlands_product_price", "Netherlands_total_quantity_sold"])
 
     # Run the function under test
