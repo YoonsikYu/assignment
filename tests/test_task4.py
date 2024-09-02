@@ -1,17 +1,16 @@
 import pytest
 from pyspark.sql import SparkSession
 from chispa import assert_df_equality
-from src.task3 import process_department_breakdown
-
+from src.task4 import process_top_3_performers
 
 @pytest.fixture(scope="module")
 def spark():
     return SparkSession.builder \
         .master("local") \
-        .appName("task3_test") \
+        .appName("task4_test") \
         .getOrCreate()
 
-def test_process_department_breakdown(spark):
+def test_process_top_3_performers(spark):
     # Create example input data
     df1 = spark.createDataFrame([
         (1, "Marketing", 41, 21),
@@ -25,14 +24,15 @@ def test_process_department_breakdown(spark):
         (3, "Vincent Mathurin", "4133HB", "44933"),
     ], ["id", "name", "address", "sales_amount"])
 
-        # Expected output DataFrame
+    # Expected output DataFrame
     expected_df = spark.createDataFrame([
-        ("Marketing", 67, "53.73%", "106.7K"),
-        ("IT", 22, "54.55%", "44.9K")
-    ], ["area", "total_calls_made", "call_success_rate", "total_sales_amount(Million)"])
+        ("708", "Finance", "Rosa de Jager", "Fabianring 277, 3274 DP, Gastel", 52, 67.31, "99827.12"),
+        ("910", "Finance", "Dylano van Enschot-Meyer", "2847 LC, Westwoud", 88, 69.32, "99795.03" )
+        ("864", "Finance", "Ceylin van Voorst", "Fayweg 82, 7959 WD, Middenmeer", 100, 95.0, "67153.61")
+    ], ["id", "area", "name", "address", "calls_made", "call_success_rate", "sales_amount"])
 
     # Run the function under test
-    result_df = process_department_breakdown(df1, df2)
+    result_df = process_top_3_performers(df1, df2)
        
     # Use chispa to compare DataFrames
     assert_df_equality(result_df, expected_df, ignore_nullable=True)
