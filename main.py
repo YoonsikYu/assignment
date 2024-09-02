@@ -13,7 +13,7 @@ from src.extra_insight_two import extra_insight_two
 
 def setup_logging(log_file='logs/data_processing.log') -> logging.Logger:
     """
-    Set up logging with a rotating file handler. 
+    Set up logging with a rotating file handler.
 
     :param log_file: The file path for the log file.
     :return: Configured logger instance.
@@ -25,13 +25,15 @@ def setup_logging(log_file='logs/data_processing.log') -> logging.Logger:
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
     
-    handler = RotatingFileHandler(log_file, maxBytes=5*1024*1024, backupCount=3)
-    handler.setLevel(logging.INFO)
+    # Check if the logger already has handlers configured
+    if not logger.hasHandlers():
+        handler = RotatingFileHandler(log_file, maxBytes=5*1024*1024, backupCount=3)
+        handler.setLevel(logging.INFO)
     
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    handler.setFormatter(formatter)
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+        handler.setFormatter(formatter)
     
-    logger.addHandler(handler)
+        logger.addHandler(handler)
     
     return logger
 
