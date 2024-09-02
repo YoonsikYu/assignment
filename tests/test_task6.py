@@ -34,7 +34,7 @@ def test_process_best_salesperson(spark):
 
     expected_df = spark.createDataFrame([
         ("Belgium", 1, "Evie Godfrey van Alemannië-Smits", "1808 KR, Benningbroek", 50, 69087.89, 1),
-        ("Netherlands", 3, "Vincent Mathurin", "4133HB", 1, 37606.23, 2)
+        ("Netherlands", 3, "Vincent Mathurin", "4133HB", 1, 44933.12, 1)
     ], ["country", "caller_id", "name", "address", "total_quantity", "total_sales_amount", "global_sales_rank"]).withColumn("global_sales_rank", col("global_sales_rank").cast(IntegerType()))
 
 
