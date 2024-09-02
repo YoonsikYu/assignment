@@ -71,32 +71,32 @@ def main():
     df3 = load_data(spark, "data/dataset_three.csv", logger)
     
     # Execute each task
-    logger.info("Starting IT data processing...")
-    process_it_data(df1, df2)
+    #logger.info("Starting IT data processing...")
+    #process_it_data(df1, df2)
     
-    logger.info("Starting Marketing address information processing...")
-    process_marketing_address_info(df1, df2)
+    #logger.info("Starting Marketing address information processing...")
+    #process_marketing_address_info(df1, df2)
     
-    logger.info("Starting Department breakdown processing...")
-    process_department_breakdown(df1, df2)
+    #logger.info("Starting Department breakdown processing...")
+    #process_department_breakdown(df1, df2)
     
-    logger.info("Starting Top 3 performers processing...")
-    process_top_3_performers(df1, df2)
+    #logger.info("Starting Top 3 performers processing...")
+    #process_top_3_performers(df1, df2)
     
-    logger.info("Starting Top 3 most sold products processing in Netherlands...")
-    process_top_3_most_sold(df1, df2, df3)
+    #logger.info("Starting Top 3 most sold products processing in Netherlands...")
+    #process_top_3_most_sold(df1, df2, df3)
     
-    logger.info("Starting Best salesperson processing...")
-    process_best_salesperson(df1, df2, df3)
+    #logger.info("Starting Best salesperson processing...")
+    #process_best_salesperson(df1, df2, df3)
     
-    logger.info("Running Extra Insight One...")
+    #logger.info("Running Extra Insight One...")
     #extra_insight_one(df1, df2, df3)
     
-    logger.info("Running Extra Insight Two...")
-    extra_insight_two(df1, df2, df3)
+    #logger.info("Running Extra Insight Two...")
+    #extra_insight_two(df1, df2, df3)
 
-    logger.info("All tasks completed successfully.")
-    spark.stop()
+    #logger.info("All tasks completed successfully.")
+    #spark.stop()
 
 if __name__ == "__main__":
     main()
